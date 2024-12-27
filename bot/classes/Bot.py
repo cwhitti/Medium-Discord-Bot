@@ -1,4 +1,3 @@
-import discord
 import secret as sc
 import config as cfg
 from classes.EmbedHandler import EmbedHandler 
@@ -81,7 +80,7 @@ class Bot( EmbedHandler, SQLHandler, GuildHandler, DatabaseHandler ):
                                     guild = msg.guild, 
                                     desc = desc)
     
-    async def update_database(self):
+    async def update_database(self, msg=None):
 
         # initialize variables
             # None
