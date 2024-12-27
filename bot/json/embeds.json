@@ -1,0 +1,93 @@
+{
+    "_comments":{
+
+        "Hello there!":"Here is my solution to messy discord embeds.",
+
+        "#1":"These are the controls and are meant to be used in conjunction with EmbedHandler.",
+        "#2":"You can name an embed here and add it to the Discord bot",
+
+        "#3":"Use EmbedHandler to retrieve these. Example usage:",
+        "#4":"embed = EmbedHandler.get_embed('welcome', mention=msg.author.mention)", 
+
+        "#5":{
+            "parameters-explained":{
+                "title": "Discord embed title",
+                "description": "Discord embed description",
+                "color": "Discord embed color",
+                "channel": "Channel for embed to be sent in"
+            },
+
+            "#valid-channels":{ 
+                "general": "Sends to general chat",
+                "": "Sends anywhere the command call is"
+            }
+        },
+
+        "#6":"This just puts all embeds in one place so its not as messy anymore.",
+        "#7":"P.S. - you can use scripts/string_converter.py to format nice strings to json format."
+        
+    },
+
+    "_embed-format":{
+        "title": "",
+        "description": "",
+        "color": "",
+        "channel": ""
+    },
+    "bot-not-ready":{
+        "title": "Bot Setting Up",
+        "description":"Sorry, {mention}. This bot is still in the process of setting up. Try again in a few minutes",
+        "color": "DEFAULT",
+        "channel": ""
+    },
+
+    "bot-start":{
+        "title": "Started Bot",
+        "description":"",
+        "color": "DEFAULT",
+        "channel": "general"
+    },
+
+    "hello":{
+        "title": "Oh, hi!",
+        "description":"Good to see you! You can get started with {prefix}help to see my commands.",
+        "color": "SUCCESS",
+        "channel": ""
+    },
+
+    "help":{
+        "title": "Help Commands",
+        "description": "{desc}",
+        "color": "DEFAULT",
+        "channel": ""
+    },
+
+    "invalid-command":{
+        "title": "Invalid Command",
+        "description": "Unknown command. Find a list of commands with {prefix}help.",
+        "color": "FAILURE",
+        "channel": ""
+    },
+
+    "unauthorized-user":{
+        "title": "Unauthorized User",
+        "description": "Sorry {mention}, you are not authorized to use this command.",
+        "color": "FAILURE",
+        "channel": ""
+            
+    },
+
+    "update-database-failure":{
+        "title": "Database Failire",
+        "description": "Unable to update the database: {e}",
+        "color": "FAILURE",
+        "channel": "general"
+    },
+    
+    "update-database-success":{
+        "title": "Updated Database",
+        "description": "Database has been successfully updated.\n\n**Summary**\n- {summary}",
+        "color": "SUCCESS",
+        "channel": "general"
+    }
+}
