@@ -100,27 +100,3 @@ class EmbedHandler ( ):
     def set_guild(self, guild):
         self.guild = guild
 
-def _example():
-
-    guild = discord.guild
-    embed_handler = EmbedHandler(guild)
-
-    '''
-    Assume regular bot stuff here
-    '''
-
-    # @bot.event
-    async def on_member_join(member):
-        """
-        Handles the event when a member joins the server.
-        Sends a welcome embed message to the configured channel.
-        """
-        guild = member.guild
-        try:
-            embed = await embed_handler.get_embed("welcome", mention=member.mention)
-            destination_channel = embed.get_channel()
-            if destination_channel:
-                await destination_channel.send(embed=embed)
-        except Exception as e:
-            print(f"Error sending welcome message: {e}")
-
